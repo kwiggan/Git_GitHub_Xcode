@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="g9z-VO-AJE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n6K-li-zEe">
                                 <rect key="frame" x="20" y="64" width="374" height="56.5"/>
                                 <subviews>
@@ -32,6 +35,7 @@
                                 <color key="backgroundColor" red="1" green="0.87506985639869261" blue="0.3952716492711813" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="aLY-V0-n7j" firstAttribute="leading" secondItem="n6K-li-zEe" secondAttribute="leading" id="4bt-Kf-D6p"/>
+                                    <constraint firstItem="aLY-V0-n7j" firstAttribute="centerX" secondItem="n6K-li-zEe" secondAttribute="centerX" id="ALN-6I-niM"/>
                                     <constraint firstAttribute="trailing" secondItem="aLY-V0-n7j" secondAttribute="trailing" id="HEA-MH-LxL"/>
                                     <constraint firstItem="aLY-V0-n7j" firstAttribute="top" secondItem="n6K-li-zEe" secondAttribute="top" id="p2N-eO-dWW"/>
                                 </constraints>
@@ -71,8 +75,12 @@
                             <constraint firstItem="otR-m8-wFN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4lW-Tu-INx"/>
                             <constraint firstItem="Xe5-5W-611" firstAttribute="trailing" secondItem="otR-m8-wFN" secondAttribute="trailing" id="5JN-HI-q9W"/>
                             <constraint firstItem="otR-m8-wFN" firstAttribute="leading" secondItem="Xe5-5W-611" secondAttribute="leading" id="64n-mp-Fr4"/>
+                            <constraint firstItem="g9z-VO-AJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bg8-Mj-Y1g"/>
+                            <constraint firstItem="g9z-VO-AJE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Joy-wW-UZl"/>
+                            <constraint firstAttribute="trailing" secondItem="g9z-VO-AJE" secondAttribute="trailing" id="WZ2-4c-nsk"/>
                             <constraint firstItem="n6K-li-zEe" firstAttribute="leading" secondItem="Xe5-5W-611" secondAttribute="leading" constant="20" id="btN-b4-TV2"/>
                             <constraint firstItem="n6K-li-zEe" firstAttribute="top" secondItem="Xe5-5W-611" secondAttribute="top" constant="20" id="gAS-IE-9FX"/>
+                            <constraint firstAttribute="bottom" secondItem="g9z-VO-AJE" secondAttribute="bottom" id="ghi-4R-mWT"/>
                             <constraint firstItem="Xe5-5W-611" firstAttribute="trailing" secondItem="n6K-li-zEe" secondAttribute="trailing" constant="20" id="yPH-Zl-HLa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xe5-5W-611"/>
@@ -80,7 +88,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="-305"/>
+            <point key="canvasLocation" x="32" y="-674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown.jpeg" width="105" height="140"/>
+    </resources>
 </document>
